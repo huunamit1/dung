@@ -1,5 +1,5 @@
 header{
-    background-color: #fff;;
+    background-color: #FFFFE0;
     height: 50px;
     padding: 0 ;
     display: flex;
@@ -14,18 +14,19 @@ header{
 .menu{
     width: 60%;
     /* margin-bottom: 24px; */
-    background-color: #FFDE59;
+    background-color: #f7941d;
     height: 100%;
     display: flex;
     padding: 24px 16px;
     align-items: center;
     justify-content: center;  
     /* border: blue solid 4px; */
-    border-left: #FFDE59 solid 4px;
+    border-left: #f7941d solid 4px;
+    font-family: 'Dancing Script', cursive;
 }
 .list-menu{
     text-decoration: none;
-    font-size: 32px;
+    font-size: 24px;
     color: #000;
     margin: 0 34px;
 
@@ -54,15 +55,20 @@ header{
     background-color: #333;
 }
 .info{
-    padding-bottom: 64px;
+    padding-top: 64px ;
     text-align: center;
-    padding: 24px 12px;
+    color: #fff;
 }
 .info h2{
     font-size:30px;
+    padding: 24px  0;
+    letter-spacing: 3px;
 }
 .info p{
     text-align: justify;
+    padding: 18px 0;
+    letter-spacing: 3px;
+    line-height: 1.8;
 }
 .sp{
     padding: 64px 0;
@@ -76,8 +82,28 @@ header{
     margin-top: 32px;
 }
 .info-sp{
-    background-color: aquamarine;
+    background-color: #fff;
     padding: 16px 16px;
+}
+.info-sp h2{
+    font-size: 16px;
+    padding: 6px 0;
+    font-weight: 700;
+}
+.info-sp p{
+    padding: 6px 0;
+}
+/* nut */
+.button1{ 
+    background-color: #f7941d;
+    display: block;
+    line-height: 1.8;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    margin: 16px 0;
+    margin-bottom: 8px;
 }
 /* sp-mau */
 
@@ -92,4 +118,23 @@ header{
 }
 .photo-center-spM img{
     width: 100%;
+}
+/* review */
+.content-3{
+    background-color: #f7941d;
+    padding: 64px 0;
+}
+.noidung{
+    line-height: 1.8;
+    letter-spacing: 3px;
+}
+.photo-review video{
+    width: 45%;
+}
+.photo-review {
+    text-align: center;
+}
+.content-4{
+    background-color: #fff;
+    padding: 64px 0;
 }
