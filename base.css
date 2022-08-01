@@ -1,7 +1,7 @@
 header{
-    background-color: #FFFFE0;
-    height: 50px;
+    background-color: #FFF;
     padding: 0 ;
+    height: 70px;
     display: flex;
     align-items: center;
     /* border-bottom: black solid 2px; */
@@ -12,16 +12,14 @@ header{
     z-index: 999;
 }
 .menu{
-    width: 60%;
+    width: 70%;
+    height: 70px;
     /* margin-bottom: 24px; */
     background-color: #f7941d;
-    height: 100%;
     display: flex;
     padding: 24px 16px;
     align-items: center;
     justify-content: center;  
-    /* border: blue solid 4px; */
-    border-left: #f7941d solid 4px;
     font-family: 'Dancing Script', cursive;
 }
 .list-menu{
@@ -29,19 +27,27 @@ header{
     font-size: 24px;
     color: #000;
     margin: 0 34px;
+    display: block;
 
 }
 
 .logo{
     width: 200px;
-    line-height: 100px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 .logo img{
-    width: 100%;
+    width: 63%;
+}
+.icon{
+    text-align: center;
+    font-size: 24px;
+    line-height: 70px;
+    padding: 0 24px;
+    display: none;
 }
 .slider{
     background-image: url("slder.jpg");
@@ -49,7 +55,7 @@ header{
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .content{
     background-color: #333;
@@ -66,7 +72,7 @@ header{
 }
 .info p{
     text-align: justify;
-    padding: 18px 0;
+    padding: 18px 4px;
     letter-spacing: 3px;
     line-height: 1.8;
 }
@@ -91,7 +97,7 @@ header{
     font-weight: 700;
 }
 .info-sp p{
-    padding: 6px 0;
+    padding: 6px 0px;
 }
 /* nut */
 .button1{ 
@@ -127,9 +133,12 @@ header{
 .noidung{
     line-height: 1.8;
     letter-spacing: 3px;
+    text-align: justify;
+    padding: 0 8px;
 }
 .photo-review video{
     width: 45%;
+    z-index: 0;
 }
 .photo-review {
     text-align: center;
@@ -137,4 +146,23 @@ header{
 .content-4{
     background-color: #fff;
     padding: 64px 0;
+}
+/* xu ly me nu */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    display:none;
+    animation: fadeIn linear 0.6s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
