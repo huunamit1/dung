@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="resposive.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -15,16 +17,29 @@
 <body>
     <header>
         <div class="menu">
-            <a href="#" class="list-menu">Mua</a>
-            <a href="#" class="list-menu">Thông tin sản phẩm </a>
-            <a href="#" class="list-menu">Review</a>
+            <a href="#buy" class="list-menu">Mua</a>
+            <a href="#info" class="list-menu">Thông tin sản phẩm </a>
+            <a href="#review" class="list-menu">Review</a>
         </div>
         <div class="logo">
-            <img src="logo-removebg-preview.png" alt="" class="item-logo">
+          <a href="#"><img src="logo.png" alt="" class="item-logo"></a> 
+        </div>
+        <label for="nav-mb">
+        <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </label>
+        <input type="checkbox" id="nav-mb">
+        <label for="nav-mb" id="over-lay" class="overlay"></label>
+        <div  id="menu-mb" class="menu-mb">
+            <a href="#buy"  class="list-menu">Mua</a>
+            <a href="#info" id="menu-list" class="list-menu">Thông tin sản phẩm</a>
+            <a href="#review" id="menu-list" class="list-menu">Review</a>
+            <label for="nav-mb"><div class="close-icon"><i class="fa-solid fa-circle-xmark"></i></div></label>
         </div>
     </header>
     <div class="slider"></div>
-    <div class="content-3">
+    <div  id="info" class="content-3">
         <div class="grid wide">
             <div class="row review">
                 <div class="col l-6">
@@ -32,7 +47,7 @@
                         Ngoài những thư viện font có sẵn thì bạn cũng có thể tìm tải các font Tiếng Việt đẹp trên internet và cài vào website nhanh chóng, nhưng lưu ý, hiển thị nhiều font khác nhau trên cùng một website có thể sẽ làm nặng website và dẫn đến website chạy chậm làm giảm trải nghiệm người dùng.
                     </div>
                 </div>
-                <div class="col l-6 video-1">
+                <div class="col l-6">
                     <div class="photo-review">
                         <video controls loop>
                             <source src="vi-1.mp4">
@@ -45,9 +60,9 @@
     <div class="content-4">
         <div class="grid wide">
             <div class="row review">
-                <div class="col l-6 video-1">
+                <div class="col l-6">
                     <div class="photo-review">
-                        <video controls loop>
+                        <video  class="vi-2" controls loop>
                             <source src="vi-2.mp4">
                           </video>
                     </div>
@@ -60,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="content">
+    <div id="buy" class="content">
         <div class="grid wide">
             <div class="row">
                 <div class="info col">
@@ -256,7 +271,7 @@
                             <p>Giao hang</p>
                             <p>Ha Noi</p>
                             <a class="button1" href="#">
-                                <span class="btn1">Mua Ngay</span>
+                                <span class="btn1">Mua <i class="fa-solid fa-circle-ellipsis"></i>  Ngay</span>
                                </a>
                         </div>
                     </div>
@@ -265,7 +280,7 @@
             </div>
         </div>
     </div>
-    <div class="content-1">
+    <div id="review" class="content-1">
         <div class="grid wide">
             <div class="row sp-mau">
                 <div class="col c-12 l-4 m-4">
@@ -284,6 +299,37 @@
                 <div class="col c-12 l-4 m-4">
                     <div class="photo-spM">
                         <img src="mau-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="grid wide">
+            <div class="row row-form">
+                <div class="col l-6 c-11 m-11 lb">
+                    <h2 class="contac">Phone : 0386117963</h2>
+                    <h2 class="contac">Name : Dinh Huu Dung</h2>
+                    <h2 class="contac">Adress : Xom 7 Hung Trung Hung Nguyen Nghe An</h2>
+                </div>
+                <div class="col l-6 c-11 m-11 lb">
+                    <form id="test-form" method="post" action="https://script.google.com/macros/s/AKfycbycrSTNlWtDQb8CWFAH-tBfO9WdxMJOIchS2rRCJ0zsPotuo_sGupATnZZ2lZGoFSc/exec">
+                        <label for="" class="name-input"  >Name:</label><br>
+                        <input type="text" name="Name"/>
+                        <br>
+                        <label for="" class="name-input" >Số Điện Thoại:</label><br>
+                        <input type="tel" id="phone" name="Number Phone" pattern="[0]{1}[0-9]{1,9}"
+                        title="Không để trống" required>
+                        <script>
+                            var input = document.getElementById('phone');
+                            input.oninvalid = function(event) {
+                                    event.target.setCustomValidity('Nhập sai hoặc bị để trống');
+                            }
+                        </script>
+                        <br>
+                        <label for="" class="name-input" >Địa Chỉ:</label><br>
+                        <input type="text" name="Adress"/>
+                        <button class="button1" type="submit"id="submit-form">Gửi</button>
+                     </form>
                 </div>
             </div>
         </div>
