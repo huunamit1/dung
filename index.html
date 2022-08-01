@@ -318,18 +318,12 @@
                         <br>
                         <label for="" class="name-input" >Số Điện Thoại:</label><br>
                         <input type="tel" id="phone" name="Number Phone" pattern="[0]{1}[0-9]{1,9}"
-                        title="Không để trống" required>
-                        <script>
-                            var input = document.getElementById('phone');
-                            input.oninvalid = function(event) {
-                                    event.target.setCustomValidity('Nhập sai hoặc bị để trống');
-                            }
-                        </script>
+                        title="Không để trống hoặc nhập sai" required>
                         <br>
                         <label for="" class="name-input" >Địa Chỉ:</label><br>
                         <input type="text" name="Adress"/>
                         <button class="button1" type="submit"id="submit-form">Gửi</button>
-                     </form>
+                    </form>
                 </div>
             </div>
         </div>
