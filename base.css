@@ -1,0 +1,197 @@
+header{
+    background-color: #FFF;
+    padding: 0 ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    /* border-bottom: black solid 2px; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+.menu{
+    width: 70%;
+    height: 70px;
+    /* margin-bottom: 24px; */
+    background-color: #f7941d;
+    display: flex;
+    padding: 24px 16px;
+    align-items: center;
+    justify-content: center;  
+    font-family: 'Dancing Script', cursive;
+}
+.list-menu{
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    margin: 0 34px;
+    display: block;
+
+}
+
+.logo{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo img{
+    width: 63%;
+}
+.icon{
+    text-align: center;
+    font-size: 24px;
+    line-height: 70px;
+    padding: 0 24px;
+    display: none;
+}
+.slider{
+    background-image: url("slder.jpg");
+    padding-top: 50%;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+}
+.content{
+    background-color: #333;
+}
+.info{
+    padding-top: 64px ;
+    text-align: center;
+    color: #fff;
+}
+.info h2{
+    font-size:30px;
+    padding: 24px  0;
+    letter-spacing: 3px;
+}
+.info p{
+    text-align: justify;
+    padding: 18px 4px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+}
+.sp{
+    padding: 64px 0;
+    padding-top:12px ;
+}
+.photo-sp img{
+    width: 100%;
+    display: block;  
+}
+.photo-sp{
+    margin-top: 32px;
+}
+.info-sp{
+    background-color: #fff;
+    padding: 16px 16px;
+}
+.info-sp h2{
+    font-size: 16px;
+    padding: 6px 0;
+    font-weight: 700;
+}
+.info-sp p{
+    padding: 6px 0px;
+}
+/* nut */
+.button1{ 
+    background-color: #f7941d;
+    display: block;
+    line-height: 1.8;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    margin: 16px 0;
+    margin-bottom: 8px;
+}
+/* sp-mau */
+
+.sp-mau{
+    padding: 64px 0;
+}
+.photo-spM {
+    padding-top: 16px;
+}
+.photo-spM img{
+    width: 100%;
+}
+.photo-center-spM img{
+    width: 100%;
+}
+/* review */
+.content-3{
+    background-color: #f7941d;
+    padding: 64px 0;
+}
+.noidung{
+    line-height: 1.8;
+    letter-spacing: 3px;
+    text-align: justify;
+    padding: 0 8px;
+}
+.photo-review video{
+    width: 45%;
+    z-index: 0;
+}
+.photo-review {
+    text-align: center;
+}
+.content-4{
+    background-color: #fff;
+    padding: 64px 0;
+}
+/* xu ly me nu */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    display:none;
+    animation: fadeIn linear 0.6s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* thong bao */
+ .tb-loi{
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+/* size */
+.list-color{
+    display: flex;
+    /* display: none; */
+}
+.list-color input{
+    height: 20px;
+    width: 50%;
+    
+}
+.list-color .name-color{
+    color: #FFF;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
